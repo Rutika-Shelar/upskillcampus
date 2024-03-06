@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colortint1"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textViewLightIntensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light Intensity"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Switch
+        android:id="@+id/modeControl"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewLightIntensity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:fontFamily="sans-serif"
+        android:text="Auto Mode"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="25dp"
+        android:thumbTint="@color/colortint"
+        android:trackTint="@color/colorPrimary"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/LightControl"
+
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/modeControl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Light Controller"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="#17631D"
+        android:textSize="25dp"
+        android:thumbTint="@color/colortint"
+        android:trackTint="@color/colorPrimary"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageSwitcher
+        android:id="@+id/imageViewLightBulb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LightControl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+
+        android:src="@drawable/bulb_off" />
+
+
+</LinearLayout>

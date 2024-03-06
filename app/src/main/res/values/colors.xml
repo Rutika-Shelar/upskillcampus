@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- res/values/colors.xml -->
+
+
+        <color name="colorPrimary">#35374B</color>
+        <color name="colorSecondary">#344955</color>
+        <color name="colorlight">#50727B</color>
+    <color name="colortint">#78A083</color>
+    <color name="colortint1">#E3ECDD</color>
+    C5EBAA
+
+
+
+</resources>
