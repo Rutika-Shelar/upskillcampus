@@ -44,12 +44,8 @@ public class MainActivity extends AppCompatActivity {
         modeControl = findViewById(R.id.modeControl);
         imageViewLightBulb = findViewById(R.id.imageViewLightBulb); // Initialize ImageSwitcher
         lightController=findViewById(R.id.LightControl);
-
-
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         lightIntensityRef = database.getReference("sensors").child("sensor1");
-
-
 
 
         lightIntensityRef.child("light_intensity").addValueEventListener(new ValueEventListener() {
@@ -66,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
                 showToast("Failed to retrieve light intensity data: " + databaseError.getMessage());
             }
         });
-
-
 
         modeControl.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -101,8 +95,6 @@ public class MainActivity extends AppCompatActivity {
                 updateUI(lightIntensity,modeControl.isChecked());
             }
         });
-
-
 
 
         imageViewLightBulb.setFactory(new ViewSwitcher.ViewFactory() {
