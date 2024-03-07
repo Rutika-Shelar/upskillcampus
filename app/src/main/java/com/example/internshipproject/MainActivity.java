@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         imageViewLightBulb.setFactory(new ViewSwitcher.ViewFactory() {
             @Override
             public View makeView() {
