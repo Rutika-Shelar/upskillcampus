@@ -33,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private Switch lightController;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     showToast("Manual settings enabled");
                     lightController.setVisibility(View.VISIBLE);
-
-
 
                     lightController.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
